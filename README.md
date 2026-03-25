@@ -6,6 +6,8 @@ Este projeto tem como objetivo desenvolver um sistema web com painéis interativ
 
 O sistema foi pensado para apresentar dados de forma clara, acessível e intuitiva, atendendo tanto especialistas quanto usuários leigos.
 
+Componentes: Adrielly Costa Antonio, Daniel Benevides de Morais, Gabrielle Oliveira de Paula, Luisa Vernersbach Varejão e Tiago Andrade Arrigoni.
+
 ---
 
 ## 🎯 Objetivo
