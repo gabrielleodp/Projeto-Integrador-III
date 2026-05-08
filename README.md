@@ -22,7 +22,7 @@ O sistema foi pensado para apresentar dados de forma clara, acessível e intuiti
 O layout e a estrutura visual do sistema foram desenvolvidos no Figma.
 
 🔗 **Acesse o protótipo:**  
-[Protótipo no Figma](https://www.figma.com/proto/bVLsD7deX96UH7q5uDWUpJ/Prot%C3%B3tipo-InfoDengue?node-id=21-2423&t=9rmJ7RkE8TLbJjaq-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=6%3A241)
+[Protótipo no Figma](https://www.figma.com/proto/bVLsD7deX96UH7q5uDWUpJ/Prot%C3%B3tipo-InfoDengue?node-id=6-241&t=9rmJ7RkE8TLbJjaq-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=6%3A241)
 
 🎥 **Vídeo do protótipo:**  
 [Assista ao vídeo](https://jam.dev/v/e604bf0f-32c4-4988-a438-afbe3b675436)
