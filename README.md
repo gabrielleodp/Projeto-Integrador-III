@@ -12,7 +12,7 @@ O sistema foi pensado para apresentar dados de forma clara, acessível e intuiti
 - Adrielly Costa Antonio
 - Daniel Benevides de Morais  
 - Gabrielle Oliveira de Paula 
-- Luisa Vernersbach Varejão 
+- Luísa Vernersbach Varejão
 - Tiago Andrade Arrigoni
 
 ---
