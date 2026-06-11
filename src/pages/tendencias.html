@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>InfoDengue — Tendências</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <h1>InfoDengue</h1>
+      <span>Vigilância Epidemiológica</span>
+    </div>
+    <nav class="nav" id="nav">
+      <a href="../index.html" data-page="geral">
+        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+        Visão Geral
+      </a>
+      <a href="regional.html" data-page="regional" >
+        <svg viewBox="0 0 24 24"><path d="M9 3 4 5v16l5-2 6 2 5-2V3l-5 2-6-2Z"/><path d="M9 3v16M15 5v16"/></svg>
+        Análise Regional
+      </a>
+      <a href="tendencias.html" data-page="tendencias" class="active">
+        <svg viewBox="0 0 24 24"><path d="M3 17l5-5 4 3 7-8"/><path d="M16 7h5v5"/></svg>
+        Tendências
+      </a>
+      <a href="prevencao.html" data-page="prevencao" >
+        <svg viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 4.5 3 8 7 10 4-2 7-5.5 7-10V6l-7-3Z"/><path d="m9.5 12 1.8 1.8L15 10"/></svg>
+        Prevenção
+      </a>
+    </nav>
+    <div class="side-foot">
+      Fonte: SINAN / DATASUS<br>Dados simulados — Projeto Integrador III<br>FAESA · Ciência de Dados
+    </div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <button class="menu-btn" id="menuBtn"><svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+      <div class="search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4-4"/></svg>
+        <input type="text" placeholder="Pesquisar município..." id="searchInput">
+      </div>
+      <div class="spacer"></div>
+      <div class="ticons">
+        <button title="Notificações"><span class="dot"></span><svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg></button>
+        <button title="Ajuda"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 0 1 5 .3c0 1.7-2.5 2-2.5 3.7"/><circle cx="12" cy="17" r=".6" fill="#5d6b82" stroke="none"/></svg></button>
+        <button title="Configurações"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19 12a7 7 0 0 0-.1-1.4l2-1.5-2-3.5-2.3 1a7 7 0 0 0-2.4-1.4L13.8 2h-3.6l-.4 2.7A7 7 0 0 0 7.4 6L5 5 3 8.5l2 1.5A7 7 0 0 0 5 12c0 .5 0 1 .1 1.4l-2 1.5 2 3.5 2.3-1a7 7 0 0 0 2.4 1.4l.4 2.7h3.6l.4-2.7a7 7 0 0 0 2.4-1.4l2.3 1 2-3.5-2-1.5c0-.4.1-.9.1-1.4Z"/></svg></button>
+      </div>
+      <div class="divider"></div>
+      <div class="user"><b>Dra. Adrielly Costa</b><span>GESTORA FEDERAL</span></div>
+    </header>
+
+<section class="view" id="view-tendencias">
+      <div class="row2">
+        <div class="card card-pad">
+          <div class="card-head">
+            <div>
+              <div style="font-size:11px;letter-spacing:.6px;color:var(--muted);font-weight:800;text-transform:uppercase">Série Histórica</div>
+              <h3 style="font-size:21px;margin-top:3px">Casos Notificados vs. Média Histórica</h3>
+            </div>
+            <div class="lgnd">
+              <div class="l on"><span class="d" style="background:var(--brand)"></span>Ano Atual (2024)</div>
+              <div class="l"><span class="d" style="background:#c3ccd8"></span>Média 10 Anos</div>
+            </div>
+          </div>
+          <div id="linechart" style="position:relative"></div>
+        </div>
+        <div>
+          <div class="card predict">
+            <span class="badge">IA PREDITIVA</span>
+            <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/></svg></div>
+            <h3>Predição Próximas 4 Semanas</h3>
+            <p class="desc">Intervalo de confiança de 95% baseado em dados climáticos e vetoriais.</p>
+            <div class="estim">Estimativa Central <span class="pct" id="predpct"></span></div>
+            <div class="pbar"><i style="width:62%"></i></div>
+            <div class="foot">Aumento esperado em 14 capitais</div>
+          </div>
+          <div class="card card-pad alerts">
+            <h3><svg viewBox="0 0 24 24"><path d="M12 3 2 20h20L12 3Z"/><path d="M12 10v4M12 17v.5"/></svg>Alertas de Surtos Iminentes</h3>
+            <div id="alertlist"></div>
+            <a class="seemore" href="#">Ver todos os alertas →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-pad" style="margin-top:18px">
+        <div class="card-head">
+          <div><h3>Análise de Tendência por Região</h3><p>Indicadores semanais e projeções</p></div>
+          <div class="toggle" id="regtabs">
+            <button class="on" data-r="Sudeste">Sudeste</button>
+            <button data-r="Nordeste">Nordeste</button>
+            <button data-r="Sul">Sul</button>
+          </div>
+        </div>
+        <table class="tbl">
+          <thead><tr><th>UF</th><th>Casos Semana</th><th>Variação (y)</th><th>Incidência /100k</th><th>Projeção 4 sem.</th><th style="text-align:right">Status</th></tr></thead>
+          <tbody id="trendrows"></tbody>
+        </table>
+      </div>
+
+      <div class="grid4">
+        <div class="card mini-stat"><div class="t">Confiabilidade dos Dados</div><div class="n blue" id="ms-conf"></div></div>
+        <div class="card mini-stat"><div class="t">Municípios em Epidemia</div><div class="n red" id="ms-epi"></div></div>
+        <div class="card mini-stat"><div class="t">Taxa de Letalidade</div><div class="n" id="ms-let"></div></div>
+        <div class="card mini-stat"><div class="t">Última Atualização</div><div class="n">12m <small>Atrás</small></div></div>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<div class="maptip" id="maptip"></div>
+<div class="chart-tip" id="charttip"></div>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
