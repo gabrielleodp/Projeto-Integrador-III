@@ -122,7 +122,8 @@ O projeto busca contribuir para:
 
 ## 🎥 Apresentação
 
-Link do video de apresentação : [text](https://youtu.be/MYNsRMTsxQg)
+Link do video de apresentação :
+ [Video de Apresentação](https://youtu.be/MYNsRMTsxQg)
 
 ---
 
